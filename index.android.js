@@ -12,12 +12,16 @@ import {
   View
 } from 'react-native';
 
+const version = require('./version.json').version;
+
 export default class npmversion extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
+          <Text />
+          <Text>{version}</Text>
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js

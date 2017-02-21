@@ -26,6 +26,8 @@ function increaseVersion (version) {
 
     fs.writeFileSync(path.join(IOS_PROJECT_DIR, PLIST_FILE), plist.build(parsedPlist));
   }
+
+  fs.writeFileSync('./version.json', `{ "version": ${PACKAGE_JSON_VERSION_PARAM}}`);
 }
 
 increaseVersion(PACKAGE_JSON_VERSION_PARAM);
