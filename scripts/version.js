@@ -20,7 +20,6 @@ function increaseVersion (version) {
   } catch (e) {
     throw new Error(e);
   }
-
   if ( typeof parsedPlist == 'object') {
     parsedPlist[PLIST_BUNDLE_VERSION_PARAM] = version;
     parsedPlist[PLIST_VERSION_STRING_PARAM] = version;
@@ -28,7 +27,7 @@ function increaseVersion (version) {
     fs.writeFileSync(path.join(PROJECT_DIR, IOS_PROJECT_DIR, PLIST_FILE), plist.build(parsedPlist));
   }
 
-  fs.writeFileSync(path.join(PROJECT_DIR, VERSION_JSON), `{ "version": "${PACKAGE_JSON_VERSION_PARAM}"}`);
+  fs.writeFileSync(path.join(PROJECT_DIR, VERSION_JSON), `{ "version": "${PACKAGE_JSON_VERSION_PARAM}" }`);
 }
 
 increaseVersion(PACKAGE_JSON_VERSION_PARAM);
