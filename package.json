@@ -5,7 +5,7 @@
   "description": "Example of React-Native application with version from package.json and npm version bump.",
   "main": "index.js",
   "scripts": {
-    "version": "node ./scripts/version.js && git add version.json, ios/npmversion/Info.plist",
+    "version": "node ./scripts/version.js && [[ $(git status --porcelain -z | awk '/version.json/ && /Info.plist/' ) ]] && git add version.json ios/npmversion/Info.plist",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
