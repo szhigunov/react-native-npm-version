@@ -38,7 +38,6 @@
     </array>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
-    <key>NSLocationWhenInUseUsageDescription</key>
     <key>NSAppTransportSecurity</key>
     <dict>
       <key>NSExceptionDomains</key>
