@@ -5,3 +5,9 @@ Why not to simpify app bumping flow, using just ```npm version```? Solution help
 
 Based on solution by @AndrewJack [https://github.com/AndrewJack/versioning-react-native-app](https://github.com/AndrewJack/versioning-react-native-app).
 See [Medium post](https://medium.com/@andr3wjack/versioning-react-native-apps-407469707661)
+
+## Requirements
+
+- ``` gawk ``` for macOS - used in `npm run version`
+- ``` watchman ``` for macOS
+- ``` node ``` higher than **4.2.0**
