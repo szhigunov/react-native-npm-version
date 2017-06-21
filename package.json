@@ -1,6 +1,6 @@
 {
   "name": "react-native-npm-version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Example of React-Native application with version from package.json and npm version bump.",
   "main": "index.js",
